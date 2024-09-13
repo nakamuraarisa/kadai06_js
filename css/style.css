@@ -1,0 +1,150 @@
+.kiwi-maru-light {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.kiwi-maru-regular {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.kiwi-maru-medium {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#main {
+    display: flex; /* フレックスボックスを適用 */
+    flex-direction: column; /* 縦方向に子要素を配置 */
+    flex: 1; /* 残りのスペースをすべて使用 */
+    height: 100vh; /* コンテナの高さを画面全体に設定 */
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px auto 15px auto;
+    color: #69113c;
+    font-size: 30px;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px 20px 15px 20px;
+    font-size: 30px;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#top_image_area {
+    text-align: center;
+}
+
+#top_image {
+    width: 30%;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+#send_area {
+    text-align: center;
+}
+
+#text:focus {
+    border: 1px solid #ffe6ed;
+    box-shadow: 0 0 5px 1px #f98fab;
+    outline: none;
+}
+
+#send {
+    color: #fff;
+    vertical-align: bottom;
+    background-color: pink;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#output_area {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#output {
+    flex: 1; /* 残りのスペース全体を占める */
+    overflow-y: scroll; /* 縦方向にスクロールを有効にする */
+    max-height: fit-content;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ebb4b2;
+    border-radius: 20px;
+}
+
+.says {
+    max-width:400px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 12px;
+    border-radius: 12px;
+    background: #fff;
+    box-sizing:border-box;
+    margin:0 !important;
+    line-height:1.5;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.user {
+    margin: 15px 15px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.ai {
+    margin: 15px 15px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ai-icon {
+    margin-right:25px;
+}
+
+.ai-icon img{
+    width: 50px;
+    height: auto;
+}
+
+
+.says:after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+  /*   margin-top:-3px;  */
+}
+
+.user .says:after {
+    right: -26px;
+    border-left: 22px solid #fff;
+}
+
+.ai .says:after {
+    left: -26px;
+    border-right: 22px solid #fff;
+}

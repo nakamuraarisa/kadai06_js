@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Webフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>おはなししよう</title>
+</head>
+<body>
+
+    <!-- 表示画面 -->
+
+    <div id="main">
+        <h1>おはなししよう</h1>
+        <h2>ようこちゃんの肩をトンとたたいてからお話ししてね</h2>
+
+        <div id="top_image_area"><img src = "img/yoko.png" id="top_image"></div>
+
+        <div id="text"></div>
+        
+        <!-- <div id="send_area">
+            <textarea id="text" placeholder="おはなししてね" cols="30" rows="3" required></textarea>　
+            <button id="send">おす</button>
+        </div> -->
+
+        <div id="output"></div>
+        
+
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script type="module" src="js/config.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+</body>
+</html>
